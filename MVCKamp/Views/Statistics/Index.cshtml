@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+
+        <br />
+        <br />
+        <h5 class="mt-4 mb-2">Statistics</h5>
+        <br />
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-12 ">
+                <div class="info-box bg-gradient-info">
+                   
+                    <div class="info-box-content">
+                        <div class="info-box-content">Toplam Kategori</div>
+                        <div class="info-box-number">@ViewBag.NumberOfCategories</div>
+
+
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="info-box bg-gradient-success">
+
+                    <div class="info-box-content">
+                        <div class="info-box-content">"Yazılım"" Kategorisine Ait Başlıklar</div>
+                        <div class="info-box-number">@ViewBag.NumberOfHeadingsOfCategoryYazilim</div>
+
+
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="info-box bg-gradient-warning">
+
+                    <div class="info-box-content">
+                        <div class="info-box-content">İsminde 'a' Harfi Geçen Yazarlar</div>
+
+                        <div class="info-box-number">@ViewBag.NumberOfWritersWithTheNameOfA</div>
+
+
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-12">
+                <div class="info-box bg-gradient-danger">
+
+                    <div class="info-box-content">
+                        <div class="info-box-content">En Fazla Başlığa Sahip Kategori</div>
+                        <div class="info-box-number">@ViewBag.CategoryWithTheMostHeadings</div>
+
+
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <div class="col-md-6 col-sm-6 col-12">
+             
+                    <div class="info-box bg-gradient-fuchsia">
+
+                        <div class="info-box-content">
+                            <div class="info-box-content">Aktif Ve Pasif Kategorilerin Farkı</div>
+                            <div class="info-box-number">@ViewBag.CountDifferenceOfStatus</div>
+
+
+                            <!-- /.info-box-content -->
+                        </div>
+                        <!-- /.info-box -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+
+            </div> 
+    <!-- /.container-fluid -->
+
+    </div>
+
+</section>
+<!-- /.content -->

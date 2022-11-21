@@ -2,15 +2,17 @@
 @{
     Layout = null;
 }
-
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 <h3>MVC3 tablo örneği</h3>
-<table>
+<table class="table table-bordered">
     <tr>
         <th>ID</th>
         <th>Name</th>
         <th>Description</th>
         <th>Writer</th>
         <th>Date</th>
+        <th>Güncelle</th>
+
 
     </tr>
     <tr>
@@ -19,6 +21,8 @@
         <td>Technology Category</td>
         <td>Sally White</td>
         <td>11.12.2001</td>
+        <td><button class="btn btn-success">Güncelle</button></td>
+
 
     </tr>
     <tr>
@@ -27,6 +31,33 @@
         <td>Education Category</td>
         <td>Robert Remorse</td>
         <td>11.12.2011</td>
+        <td><button class="btn btn-success">Güncelle</button></td>
+
+
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Cinema</td>
+        <td>Cinema Category</td>
+        <td>Bill Lawrence</td>
+        <td>13.12.2011</td>
+        <td><button class="btn btn-success">Güncelle</button></td>
+
+
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Book</td>
+        <td>Book Category</td>
+        <td>Robert Remorse</td>
+        <td>11.12.2011</td>
+        <td><button class="btn btn-success">Güncelle</button></td>
+
 
     </tr>
 </table>
+<button class="btn btn-info">Yeni kategori</button>
+<button class="btn btn-warning">Kategori Listesi</button>
+<button class="btn btn-danger">Kategori Açıklamaları</button>
+
+
